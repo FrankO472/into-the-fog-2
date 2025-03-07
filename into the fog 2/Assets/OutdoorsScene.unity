@@ -386,7 +386,7 @@ Transform:
   m_GameObject: {fileID: 159985243}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1117.2742, y: -450.6725, z: -1077.4581}
+  m_LocalPosition: {x: 1000, y: 0, z: -1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -528,7 +528,7 @@ Transform:
   m_GameObject: {fileID: 602152003}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -117.27417, y: -450.6725, z: -1077.4581}
+  m_LocalPosition: {x: 2000, y: 0, z: -1000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -603,9 +603,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1076794591}
+  - component: {fileID: 1076794592}
   m_Layer: 0
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: TerrainTreePlacer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,7 +620,7 @@ Transform:
   m_GameObject: {fileID: 1076794590}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2117.2742, y: 450.6725, z: 77.45813}
+  m_LocalPosition: {x: -0.04, y: -0.07, z: 0.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -627,6 +628,33 @@ Transform:
   - {fileID: 159985244}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1076794592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076794590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 322b3632ab868a04b985f319a0e5a861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabledPlacement: 0
+  trees:
+  - prefab: {fileID: 5368817059551823400, guid: 711b60d111420264590679ffc3f8b2a1, type: 3}
+    randomRotation: 1
+    rotationRange: {x: 0, y: 360}
+    randomPosition: 0
+    positionRange: {x: 0, y: 0}
+    randomHeight: 1
+    heightRange: {x: 1, y: 2}
+    randomWidth: 1
+    widthRange: {x: 0.5, y: 2}
+  treeDensity: 1
+  radius: 5
+  selectedTree: 0
+  shiftPressed: 0
 --- !u!1 &1388535133
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,13 +772,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823688464}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.26652497, y: -0.016820963, z: 0.004652222, w: 0.96367}
+  m_LocalPosition: {x: 1547.9, y: 135, z: -586.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30.92, y: -2, z: 0}
 --- !u!114 &1823688468
 MonoBehaviour:
   m_ObjectHideFlags: 0
